@@ -282,7 +282,7 @@ public class Spider implements Runnable, Task {
         if (pipelines.isEmpty()) {
             pipelines.add(new ConsolePipeline());
         }
-        downloader.setThread(threadNum);
+        //downloader.setThread(threadNum);
         if (threadPool == null || threadPool.isShutdown()) {
             if (executorService != null && !executorService.isShutdown()) {
                 threadPool = new CountableThreadPool(threadNum, executorService);

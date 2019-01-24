@@ -40,5 +40,8 @@ public abstract class AbstractDownloader implements Downloader {
 
     protected void onError(Request request) {
     }
+    
+    protected void onException(Request request,Exception e) {
+    }
 
 }
